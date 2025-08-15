@@ -1,14 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="stylesheet" href="src/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
   </head>
-  <body class="flex items-center justify-center min-h-screen bg-gray-100">
-    <div class="max-w-sm mx-auto bg-gray-400 text-center p-4 m-4 border-4 border-gray-300 rounded-xl shadow-lg ">
-      <h1 class="text-2xl text-gray-800 mb-4">Makunoichi</h1>
-      <h2 class="text-sm text-gray-600">Desarrollador Frontend</h2>
-    </div>
-    </body>
-</html>
+  <body class="bg-white font-poppins">
+    <nav class="flex justify-between items-center bg-gray-600 gap-8 text-white text-4xl px-4 py-4 md:justify-normal" id="Nav">
+      <img class="w-16 h-16" src="logo.jpg" alt="" />
+      <h1 class="block md:hidden font-poppins">Menu</h1>
+      <button class="block md:hidden text-white text-3xl" id="Button1">☰</button>
+      <ul class="hidden md:flex gap-7 text-white ml-6 font-poppins">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    <ul class="fixed w-50 h-screen bg-gray-600 text-white text-4xl flex flex-col gap-8 justify-center items-center top-0 right-0 transform translate-x-full transition-transform duration-300" id="MenuDesplegable">
+      <button class="text-white text-3xl absolute top-0 right-0 p-4" id="Button2">☰</button>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+    <script src="/src/index.js"></script>
+  </body>
+  </html>
