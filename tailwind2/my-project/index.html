@@ -8,17 +8,19 @@
   
 </head>
 <body class="bg-neutral-900 text-white text-center mt-16 pb-20">
-    <h1 class="text-3xl font-bold">Lista de tareas</h1>
-    <div class="w-85 h-20 border-1 border-neutral-700/85 rounded-xl bg-neutral-800 flex items-center justify-center mx-auto mt-9"></div>
-    <div class="w-85 h-79 border-1 border-neutral-700/85 rounded-xl bg-neutral-800 flex items-center mx-auto flex-col">
-      <h1 class=" text-2xl mt-5 font-bold">Agregar Tarea</h1>
-      <input type="text" class="bg-neutral-900 text-white mt-8 px-5 w-75 py-4 border-1 border-neutral-700 rounded-xl" placeholder="Titulo de la tarea">
-      <input type="text" class="bg-neutral-900 text-white mt-4 px-5 w-75 py-4 border-1 border-neutral-700 rounded-xl" placeholder="Descripcion de la tarea">
-      <button class="px-4 py-4 bg-green-700/55 border-1 border-transparent rounded-2xl mt-4 w-75 font-bold">AGREGAR TAREA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</button>
+    <h1 class="text-3xl md:text-4xl font-bold">Lista de tareas</h1>
+    <div class="w-85 md:w-130 h-20 border-1 border-neutral-700/85 rounded-xl bg-neutral-800 flex items-center justify-center mx-auto mt-9"></div>
+    <div class="w-85 md:w-130 md:mt-7 h-79 border-1 border-neutral-700/85 rounded-xl bg-neutral-800 flex items-center mx-auto flex-col">
+      <h1 class=" text-2xl md:text-2xl mt-5 font-bold">Agregar Tarea</h1>
+      <input type="text" class="bg-neutral-900 text-white mt-8 px-5 w-75 md:w-115 py-4 border-1 border-neutral-700 rounded-xl" placeholder="Titulo de la tarea">
+      <input type="text" class="bg-neutral-900 text-white mt-4 px-5 w-75 md:w-115 py-4 border-1 border-neutral-700 rounded-xl" placeholder="Descripcion de la tarea">
+      <button class="px-4 py-4 bg-green-700/55 border-1 border-transparent rounded-2xl mt-4 w-75 md:w-115 font-bold cursor-pointer hover:bg-green-500/45 transition-colors duration-300">AGREGAR TAREA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</button>
     </div>
-    <div class="w-85 h-75 border-1 border-neutral-700/85 rounded-xl bg-neutral-800 flex items-center mx-auto flex-col">
-    <h1 class="text-2xl mt-5 font-bold">Eliminar Tarea</h1>
-    <input type="text" class="bg-neutral-900 text-white mt-9 px-5 w-70 py-4 border-1 border-neutral-700 rounded-xl" placeholder="ID de la tarea a eliminar">
-    <button class="px-4 py-4 bg-red-700/55 border-1 border-transparent rounded-2xl mt-6 w-75 font-bold">Eliminar&nbsp;&nbsp;✖</button>
+    <div class="w-85 md:w-130 md:mt-7 h-75 md:h-44 border-1 border-neutral-700/85 rounded-xl bg-neutral-800 flex items-center mx-auto flex-col">
+      <h1 class="text-2xl mt-5 font-bold">Eliminar Tarea</h1>
+      <div class="md:flex md:gap-5">
+      <input type="text" class="bg-neutral-900 text-white mt-9 px-5 w-70 md:w-85 py-4 border-1 border-neutral-700 rounded-xl" placeholder="ID de la tarea a eliminar">
+      <button class="px-4 py-4 md:px-0 md:py-0 bg-red-700/55 border-1 border-transparent rounded-2xl mt-6 w-75 md:w-35 font-bold cursor-pointer hover:bg-red-500/50 transition-colors duration-300">Eliminar&nbsp;&nbsp;✖</button>
+    </div>
     </div>
 </html>
